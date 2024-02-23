@@ -6,7 +6,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/dashboard' element={
+        <Route path='/' element={
           <>
           <Navbar/>
           <Dashboard/>
@@ -14,7 +14,7 @@ function App() {
         }
         />
 
-        <Route path='/' element={
+        <Route path='/barang' element={
           <>
           <Navbar/>
           <DataBarang/>

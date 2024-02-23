@@ -1,15 +1,27 @@
-
-.muter{
-    margin: 100;
-    animation: muter infinite;
-    animation-name: muter;
-    animation-duration: 5s;
+.border-custom th{
+    border: 1px solid;
 }
 
-@keyframes muter {
-    0% {transform:rotate(0deg);}
-    25%{transform:rotate(90deg);}
-    50%{transform:rotate(180deg);}
-    75%{transform:rotate(270deg);}
-    100% {transform: rotate(360deg);}
+.border-custom td{
+    border: 1px solid;
+}
+
+.border-custom tbody{
+    border: 1px solid;
+}
+
+a.box{
+    box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.496);
+    color: black;
+    font-weight: bold;
+}
+
+a.box p{
+    color:black
+}
+
+a.box:hover{
+    box-shadow: 5px 10px rgb(57, 57, 57);
+    color: black;
+    font-weight: bold;
 }

@@ -14,12 +14,27 @@ const DataBarang = () => {
   }, []);
 
   return (
-    <div>
-        <div className="container mt-5">
+    <div className='columns mt-0'>
+      <div className=" is-flex is-flex-direction-row is-fullwidth" style={{width:"100%"}}>
+        {/* Sidebar */}
+          <aside className="column menu has-background-dark is-one-fifth" style={{height:"100vh", flex:"none", width:"15%" }}>
+                <p className='menu-label p-2 is-size-6'>
+                    General
+                </p>
+                <ul className="menu-list">
+                    <li><a href="/" className=''>Dashboard</a></li>
+                    <li><a href="/users" className='is-active'>Barang</a></li>
+                </ul>
+            </aside>
+          <div className="column">
+
+        {/* Content */}
+          <div className="container">
             <h1 className='is-size-5'>Data Barang</h1>
-            <table className="table is-bordered is-striped is-fullwidth mt-5">
-              <thead>
-                <tr>
+            <table className="table is-bordered is-hoverable is-striped is-fullwidth 
+            is-fullwidth mt-5 border-custom">
+              <thead className='border-custom'>
+                <tr className='border-custom'>
                   <th>No</th>
                   <th>ID Barang</th>
                   <th>Nama</th>
@@ -42,7 +57,9 @@ const DataBarang = () => {
                 ))}
               </tbody>
             </table>
-        </div>
+          </div>
+          </div>
+      </div>
     </div>
   )
 }
