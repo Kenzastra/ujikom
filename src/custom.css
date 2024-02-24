@@ -10,6 +10,14 @@
     border: 1px solid;
 }
 
+.navbar-item:hover{
+    background-color: #3E8ED0 !important;
+}
+
+.navbar-item:hover p{
+    color:#4A4A4A;
+}
+
 a.box{
     box-shadow: 5px 10px 2px rgba(0, 0, 0, 0.496);
     color: black;
@@ -21,7 +29,18 @@ a.box p{
 }
 
 a.box:hover{
-    box-shadow: 5px 10px rgb(57, 57, 57);
-    color: black;
+    box-shadow: 5px 10px rgb(125, 125, 125);
+    font-size: 30px;
     font-weight: bold;
+    background-color: black;
+    transition: font-size 500ms ,background-color 1s;
+}
+
+a.box:hover p{
+    color: white;
+    transition: color 1s;
+}
+
+@keyframes rotate{
+    
 }
