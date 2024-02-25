@@ -7,6 +7,7 @@ const DataBarang = () => {
   const getBarang = async() => {
     const response = await axios.get('http://localhost:5000/barang');
     setBarang(response.data);
+    console.log(response.data);
   }
 
   useEffect(() => {
